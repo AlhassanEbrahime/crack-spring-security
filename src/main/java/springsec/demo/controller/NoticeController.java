@@ -5,12 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("home")
-public class HomeController {
+@RequestMapping("notices")
+public class NoticeController {
 
-    @GetMapping("greetings")
-    String greetUser(){
-        return "Welcome to secured home";
+
+    @GetMapping("data")
+    public String getNotices(){
+        return "Notices data";
     }
-    
 }
